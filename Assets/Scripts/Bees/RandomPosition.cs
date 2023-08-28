@@ -7,6 +7,7 @@ public class RandomPosition : MonoBehaviour
 {
 
     Vector3 initialPos;
+    public int sphereMult = 10;
 
      // Update is called once per frame
     void Start()
@@ -21,6 +22,6 @@ public class RandomPosition : MonoBehaviour
     }
     Vector3 NewRandomPosition()
     {
-        return Random.insideUnitSphere * 20 + initialPos;
+        return Random.insideUnitSphere * sphereMult + initialPos;
     }
 }
